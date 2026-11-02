@@ -1,0 +1,18 @@
+
+========================================================================
+Terminal-Bench 2.1 - Subset20 - Baseline K2
+  g20  criteria=['specification', 'output_match', 'error_signals']  K=2  pivots=2  seed=0
+  tasks=20  swing=3  N(trials)=3  comparisons/task=6.0
+========================================================================
+Method                               Score     Rate
+------------------------------------------------------------------------
+Pass@1                         17.67/20    88.3%
+LLM-as-a-Verifier                 19/20    95.0%
+Oracle (Bo3)                      19/20    95.0%
+------------------------------------------------------------------------
+Verifier tokens (84 verifier calls)
+  input                           11,661,898
+    cached input                   9,908,352  (85.0% hit rate)
+    uncached input                 1,753,546
+  output                             383,451
+    reasoning                        362,800

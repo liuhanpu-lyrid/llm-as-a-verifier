@@ -48,6 +48,39 @@ BENCHMARKS = {
         n_evaluations=2,
         max_workers=2000,
     ),
+    # Our reproduction: 20-task subset, original K=2
+    "terminal_bench_2.1_subset20_k2": Benchmark(
+        name="Terminal-Bench 2.1 - Subset20 - Baseline K2",
+        loader="terminal",
+        prompts="terminal_bench",
+        criteria=["specification", "output_match", "error_signals"],
+        cache="cache/subset20_baseline_k2.json",
+        results="results/subset20_baseline_k2.txt",
+        data={
+            "agent_dir": "data/terminal_bench_2.1_subset20"
+        },
+        n_evaluations=2,
+        pivots=2,
+        seed=0,
+        max_workers=2,
+    ),
+
+    # Our modification: reduce K from 2 to 1
+    "terminal_bench_2.1_subset20_k1": Benchmark(
+        name="Terminal-Bench 2.1 - Subset20 - Modified K1",
+        loader="terminal",
+        prompts="terminal_bench",
+        criteria=["specification", "output_match", "error_signals"],
+        cache="cache/subset20_modified_k1.json",
+        results="results/subset20_modified_k1.txt",
+        data={
+            "agent_dir": "data/terminal_bench_2.1_subset20"
+        },
+        n_evaluations=1,
+        pivots=2,
+        seed=0,
+        max_workers=2,
+    ),
     "terminal_bench_4.0": Benchmark(
         name="TERMINAL-BENCH 4.0  (Claude Code · Opus 5.5, x5, "
              "verified by deepseek-flash)",

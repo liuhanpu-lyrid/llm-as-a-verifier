@@ -26,3 +26,5 @@ docs/_build/doctrees/
 
 # Run logs
 logs/
+
+data/terminal_bench_2.1_subset20/

@@ -1,3 +1,17 @@
+
+## FTEC5660 Student Reproducibility Study
+
+This fork contains a reproducibility study of LLM-as-a-Verifier
+using DeepSeek API on a subset of Terminal-Bench 2.1.
+
+The study compares verification repetition settings K=2 and K=1,
+including selection accuracy, token consumption, runtime, and
+normalized API cost.
+
+See [REPRODUCTION.md](REPRODUCTION.md) for the experimental setup,
+reproduction commands, results, and limitations.
+
+
 <!-- markdownlint-disable MD001 MD041 -->
 <p align="center">
   <picture>
